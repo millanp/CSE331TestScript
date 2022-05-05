@@ -22,9 +22,7 @@ function testToExpected(str) {
   
   window.onload = () => {
     document.querySelector('#convert-btn').onclick = () => {
-      console.log('hello');
       let txt = document.querySelector('textarea').value;
-      console.log(testToExpected(txt))
       document.querySelector('code').innerText = testToExpected(txt);
     }
   }
