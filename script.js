@@ -15,6 +15,12 @@ function testToExpected(str) {
         out.push(words[1] + " contains:" + " INSERT HERE");
       } else if (words[0] == "ListChildren") {
         out.push("the children of " + words[2] + " in " + words[1] + " are: INSERT HERE");
+      } else if (words[0] == "FindPath") {
+        out.push(`path from ${words[2]} to ${words[3]}:`);
+        out.push(`${words[2]} to INSERT_NODE_2 with weight INSERT_WEIGHT_W1`)
+        out.push(`...`)
+        out.push(`INSERT_NODE_N-1 to ${words[3]} with weight INSERT_WEIGHT_WN-1`)
+        out.push(`total cost: INSERT_HERE`)
       }
     }
     return out.join("\n");
