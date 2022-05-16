@@ -10,7 +10,7 @@ function testToExpected(str) {
       } else if (words[0] == "AddNode") {
         out.push("added node " + words[2] + " to " + words[1]);
       } else if (words[0] == "AddEdge") {
-        out.push("added edge " + words[4] + " from " + words[2] + " to " + words[3] + " in " + words[1]);
+        out.push("added edge " + parseFloat(words[4]).toFixed(3) + " from " + words[2] + " to " + words[3] + " in " + words[1]);
       } else if (words[0] == "ListNodes") {
         out.push(words[1] + " contains:" + " INSERT HERE");
       } else if (words[0] == "ListChildren") {
